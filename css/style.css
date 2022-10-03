@@ -1,0 +1,37 @@
+/* ==========================================================================
+    GENERAL
+========================================================================== */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .desktop {
+    height: 100vh;
+    background-image: url(../images/windows-xp.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  span{
+    text-align: center;
+  }
+
+
+  /* ==========================================================================
+    ICONS
+========================================================================== */
+.big-icons{
+    display: grid ;
+    justify-content: center;
+    height: 50%;
+    width: 50vh;
+    gap: 50px;
+    
+}
