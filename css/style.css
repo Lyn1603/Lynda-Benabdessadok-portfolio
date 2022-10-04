@@ -14,7 +14,7 @@
   
   .desktop {
     height: 100vh;
-    background-image: url(../images/windows-xp.jpg);
+    background-image: url();
     background-position: center;
     background-size: cover;
   }
@@ -22,6 +22,7 @@
   span{
     text-align: center;
     font-size: large;
+    color: white;
   }
   section{
     padding-top: 200px;
@@ -71,10 +72,6 @@ div:nth-of-type(3){
   background: #bbc3c9;
 }
 
-.taskbar{
-  height: 43px;
-  display: inline-block;
-}
 
 
 
