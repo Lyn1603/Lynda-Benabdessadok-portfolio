@@ -1,7 +1,7 @@
 /* ==========================================================================
     GENERAL
 ========================================================================== */
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -20,8 +20,7 @@
   }
 
   span{
-    text-align: center;
-    font-size: large;
+      font-size: large;
   }
   section{
     padding-top: 200px;
@@ -64,12 +63,22 @@ div:nth-of-type(3){
 
 
 .taskbar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: #bbc3c9;
-}
+  background: #9fa5a9;
+  display: flex;
+  z-index: 999999999;
+  justify-content: space-between;
+  box-shadow: 0 -2px #fffdfc, 0 -4px #cce9eb;
+} 
+
+
+
+
+
+
 
 
 
