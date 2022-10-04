@@ -58,6 +58,24 @@ div:nth-of-type(3){
 
 
 
+  /* ==========================================================================
+    TASKBAR
+========================================================================== */
+
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  height: 43px;
+  width: 100%;
+  background: #bbc3c9;
+}
+
+.taskbar{
+  height: 43px;
+  display: inline-block;
+}
+
 
 
 
