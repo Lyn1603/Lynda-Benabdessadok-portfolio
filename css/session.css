@@ -1,0 +1,46 @@
+/* ==========================================================================
+    GENERAL
+========================================================================== */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: rgb(3, 131, 140);
+    font-family: "Windows Regular";
+  
+  }
+
+  @font-face {
+    font-family: "Windows Regular";
+    src: url("../font/Windows.ttf") format("truetype"),
+           
+   }
+   
+  
+  .desktop {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  div{
+      text-align: center;
+      color: rgb(0, 0, 0);
+  }
+
+
+
+  section{
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+
+  }

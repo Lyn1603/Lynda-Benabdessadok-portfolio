@@ -9,14 +9,20 @@
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(3, 131, 140);
-    color: aliceblue;
+    font-family: "Windows Regular";
+  
   }
+
+  @font-face {
+    font-family: "Windows Regular";
+    src: url("../font/Windows.ttf") format("truetype"),
+           
+   }
+   
   
   .desktop {
     height: 100vh;
-
     background-position: center;
     background-size: cover;
   }
@@ -24,20 +30,22 @@
 
   div{
       text-align: center;
+      color: rgb(0, 0, 0);
   }
 
 
 
   section{
-    padding-top: 200px;
+    padding-top: 150px;
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10%;
-    grid-template-rows: 10vh 10vh 10vh 10vh;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
 
   }
 
+  
  
 
 
@@ -47,18 +55,25 @@
 
 
 div:nth-of-type(1){
-  grid-row: 4/5;  
+  grid-row: 4/5;
+  grid-row: 5/6;  
+  
 }
 
 
 div:nth-of-type(2){
   grid-column: -2/-1; 
-  grid-row: -1/-2;
+  grid-row: -2/-1;
    
 }
 
 div:nth-of-type(3){
-  grid-column: 4/5; 
+  grid-column: 3/4; 
+  grid-row: -4/-3;
+}
+
+div:nth-of-type(4){
+  grid-column: 5/6; 
   grid-row: 1/2;
 }
 
@@ -70,17 +85,23 @@ div:nth-of-type(3){
 .taskbar {
   position: absolute;
   bottom: 0;
-  height: 53px;
+  height: 33px;
   width: 100%;
-  background: #9fa5a9;
+  background: #c8cfd4;
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
+  color: rgb(28, 28, 28);
+
 } 
 
-
 .hours-date{
-  border: 0.5px solid rgb(207, 207, 207);  
+  width: 90px;
+  background:  rgb(172, 171, 171);
+  box-shadow: inset 5px 1px rgb(154, 153, 153) ;
+}
+.hours-date p{
+  font-size: 0.49em;
 }
 
 
@@ -89,38 +110,32 @@ div:nth-of-type(3){
 ========================================================================== */
 
 
-button /* Tout d'abord, on initialise le button*/ {
-  padding: 20px 50px;
+.start-windows98 /* Tout d'abord, on initialise le button*/ {
   cursor: pointer;
   border: 0px;
-  font-size: 1.2rem;
-  background: transparent;
+  background:transparent;
   position: relative;
   transition: all .2s;
   overflow: hidden;
-  color:rgb(212, 211, 211);
-  border-radius: 5px;
-  box-shadow: 0px -0px 0px 0px rgba(55, 62, 57, 0.5), 0px 0px 0px 0px rgba(104, 111, 108, 0.5);
+  border-radius: 2px;
+  width: 70px;
 }
 
-button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+.start-windows98:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
     transform: translate(0,-6px);
     box-shadow: 10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
 }
 
 
-button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+.start-windows98::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
   content: '';
-  width: 400px;
-  height: 400px;
   position: absolute;
   top: -50px;
   left: -100px;
-  background-image: linear-gradient(225deg, #656f69 0%, #55645c 50%, #424d49 100%);
   z-index: -1;
   transition: all .5s;
 }
 
-button:hover::after /* On peut combiné les deux pour pouvoir une bonne esthétique */ {
+.start-windows98:hover::after /* On peut combiné les deux pour pouvoir avoir une bonne esthétique */ {
   transform: rotate(150deg);
 }
