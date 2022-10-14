@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/chargement.css">
+        <title>Loading</title>
+    </head>
+    <body>
+
+
+        <section>
+
+            <div id="Progress_Status">
+                <div id="myprogressBar"> </div>
+              </div>
+              
+              <button onclick="update()"> Click </button>
+
+        </section>
+        
+
+    </body>
+</html> 
+
+
+
+
+
+
+<script>
+function update() {
+  var element = document.getElementById("myprogressBar");   
+  var width = 1;
+  var identity = setInterval(scene, 10);
+  function scene() {
+    if (width >= 100) {
+      clearInterval(identity);
+      window.location="portfolio.html";
+    } else {
+      width++; 
+      element.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+  
