@@ -10,4 +10,11 @@ Once my website is deployed, in the deployments tab on Vercel, i  activated the 
 
 ## STEP 3
 
-Using github actions, i found an extension call imgbot in the github marketplace, and i activated it on my portfolio repo. I did a git cimmit and push to verificated and i found two bra
+Using github actions, i found an extension call imgbot in the github marketplace, and i activated it on my portfolio repo. I did a git cimmit and push to verificated and i found two branches : the main branch and the imgbot branch.
+
+
+## STEP 5 
+
+After this, i wanted to share my work on discord so i use zapier to connect my github account to my discord. To do this, you have to install zapier and i zaped my github to my discord account. i created a specific discord server to implement my bot here is the link : https://discord.gg/ku3YfnPW 
+
+# There is my explication of how i deploy my portfolio i hoped that you find this readme interesting and understanding, thank you !! 
