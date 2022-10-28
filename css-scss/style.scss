@@ -1,7 +1,7 @@
 /* ==========================================================================
     GENERAL
 ========================================================================== */
-  * {
+* {
     box-sizing: border-box;
   }
   
@@ -27,10 +27,11 @@
     background-size: cover;
   }
 
+   
 
   div{
       text-align: center;
-      color: rgb(0, 0, 0);
+      color: rgb(228, 243, 244);
   }
 
 
@@ -45,8 +46,38 @@
 
   }
 
+
+ button /* Tout d'abord, on initialise le button*/ {
+    cursor: pointer;
+    border: 0px;
+    background:transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    border-radius: 2px;
   
+  }
+  
+  
+  button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+    background-color: rgba(8, 8, 162, 0.586);
+    color: aliceblue;
+    border: dashed 5px rgba(194, 179, 179, 0.732);
+}
+
+
+button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+
+}
  
+
 
 
   /* ==========================================================================
@@ -85,7 +116,7 @@ div:nth-of-type(4){
 .taskbar {
   position: absolute;
   bottom: 0;
-  height: 33px;
+  height: 43px;
   width: 100%;
   background: #c8cfd4;
   display: flex;
@@ -93,24 +124,33 @@ div:nth-of-type(4){
   justify-content: space-between;
   color: rgb(28, 28, 28);
 
+
+  .hours-date{
+    width: 90px;
+    background:  rgb(172, 171, 171);
+    box-shadow: inset 5px 1px rgb(154, 153, 153) ;
+  }
+  .hours-date p{
+    font-size: 1.1rem;
+    color: rgb(243, 246, 249);
+  }
+
 } 
 
-.hours-date{
-  width: 90px;
-  background:  rgb(172, 171, 171);
-  box-shadow: inset 5px 1px rgb(154, 153, 153) ;
-}
-.hours-date p{
-  font-size: 0.49em;
-}
+
 
 
   /* ==========================================================================
    BUTTON
 ========================================================================== */
 
-
-.start-windows98 /* Tout d'abord, on initialise le button*/ {
+.start-windows98{
+  padding-top: 5px;
+  right: 20px;
+  width: 27%;
+  
+}
+.start-button /* Tout d'abord, on initialise le button*/ {
   cursor: pointer;
   border: 0px;
   background:transparent;
@@ -118,24 +158,25 @@ div:nth-of-type(4){
   transition: all .2s;
   overflow: hidden;
   border-radius: 2px;
-  width: 70px;
+  width: 20%;
+  bottom: 20%;
+  right: 110px;
+
 }
 
-.start-windows98:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
-    transform: translate(0,-6px);
-    box-shadow: 10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+.start-button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+    box-shadow: 10px 10px 25px 0px rgba(87, 84, 91, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
 }
 
 
-.start-windows98::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+.start-button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
   content: '';
   position: absolute;
   top: -50px;
   left: -100px;
   z-index: -1;
   transition: all .5s;
+  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+
 }
 
-.start-windows98:hover::after /* On peut combiné les deux pour pouvoir avoir une bonne esthétique */ {
-  transform: rotate(150deg);
-}
