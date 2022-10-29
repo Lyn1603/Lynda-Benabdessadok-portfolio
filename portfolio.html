@@ -17,67 +17,61 @@
                    
 
                 <div>
-                    <a href="" ><img src="images/me.png" alt="" width="70px"></a>
-                    <h4><button onclick="openForm()" width="10%">Me</button></h4>
-                    
-                    <div id="me" class="form-popup">
-                        <p>
-                            Bonjour, Je suis Lynda Benabdessadok. 
-                            Actuellement étudiante en première année de Bachelor à l'IIM Digital School, 
-                            je souhaite m'orienter vers les métiers du Digital qui est un secteur qui évolue énormément 
-                            et où naissent de nouveaux métiers. 
-                            Je m'intéresse particulièrement aux métiers du Développement Web. 
-                        </p>
-                        <h4><button onclick="closeForm()" width="10%">X</button></h4>
-                      </div>
-                      <style>
-                        @media screen and (max-width: 800px)  {
-                        button{
-                        width: 30%;
-                        }
-                        }
-                        button{
-                          text-align: center;
-                        }
-                        .form-popup {
-                        background: rgb(159, 167, 159);
-                        position: fixed;
-                        left: 10%;
-                        top: 10%;
-                        width: 80%;
-                        z-index: 8;
-                        margin: 0 auto;
-                        display: none;
-                        }
+                    <img src="images/me.png" alt="" width="70px">
 
-                        .form-popup ::after {
-                        background: rgb(159, 167, 159);
-                        position: fixed;
-                        left: 10%;
-                        top: 10%;
-                        width: 80%;
-                        z-index: 8;
-                        margin: 0 auto;
-                        display: block;
-                        }
-                        </style>
-                      <script>
-                             function openForm() {
-                            document.querySelector("me").style.display = "block";
-                                 }
-  
-                            function closeForm() {
-                            document.querySelector("me").style.display = "none";
-                            }
-                    </script>
+                    <br>
+                    <br>
+
+                    <div class="box">
+                      <a class="button" href="#popup1">Me </a>
+                    </div>
+                  
+                    <div id="popup1" class="overlay">
+                      <div class="popup">
+                        <h2>Here i am</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                          Hi, I’m Lynda Benabdessadok. 
+                          Currently a first-year Bachelor student at IIM Digital School, 
+                          I want to focus on Digital, which is a sector that is changing enormously 
+                          and where new jobs are born. 
+                          I am particularly interested in Web Development jobs.
+                          <br>
+                          <br>
+                          <img class="lynda" src="images/lynda.jpg" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                 
                 </div>
 
 
 
 
                 <div>
-                    <a href=""><img src="images/skills.png" alt="" width="70px"></a>
-                    <h4 >My Skills</h4>
+
+                    <img src="images/skills.png" alt="" width="70px">
+
+                    <br>
+                    <br>
+
+                    <div class="box">
+                      <a class="button" href="#popup2">My skills </a>
+                    </div>
+                    
+                    <div id="popup2" class="overlay1">
+                      <div class="popup2">
+                        <h2>Here's a little preview of my skills :</h2>
+                        <a class="close2" href="#">&times;</a>
+                        <div class="content2">
+                       
+                          <br>
+                          <br>
+
+                        </div>
+                      </div>
+                    </div>
+
                 </div>
 
 
@@ -92,16 +86,58 @@
 
           
                 <div>
-                        <a href=""><img src="images/activities.png" alt="30px"></a>
-                        <h4>Hobbies</h4> 
+                        <img src="images/activities.png" alt="30px">
+
+                        <br>
+                        <br>
+
+                        <div class="box">
+                          <a class="button" href="#popup3">My hobbies </a>
+                        </div>
+
+                        <div id="popup3" class="overlay3">
+                          <div class="popup3">
+                            <h2>Next to school, i'm trying to develop my </h2>
+                            <a class="close3" href="#">&times;</a>
+                            <div class="content3">
+                           
+                              <br>
+                              <br>
+    
+                            </div>
+                          </div>
+                        </div>
+
+
+
                 </div>
         
 
 
                 <div> 
 
-                        <a href=""><img src="images/contacts.png" alt="" width="70px"></a>
-                        <h4>Contacts</h4>
+                        <img src="images/contacts.png" alt="" width="70px">
+
+                        <br>
+                        <br>
+
+                        <div class="box">
+                          <a class="button" href="#popup4">My contacts </a>
+                        </div>
+
+                        
+                        <div id="popup4" class="overlay4">
+                          <div class="popup4">
+                            <h2>Let's connect : </h2>
+                            <a class="close4" href="#">&times;</a>
+                            <div class="content4">
+                           
+                              <br>
+                              <br>
+    
+                            </div>
+                          </div>
+                        </div>
     
                 </div>
 
@@ -115,7 +151,7 @@
 
     <div class="taskbar">
       <button class="start-button">
-        <img class="start-windows98" src="images/windows98-button-removebg-preview.png" alt="" srcset="" >
+      <img class="start-windows98" src="images/windows98-button-removebg-preview.png" alt="" srcset="" >
       </button> 
        <div class="hours-date">
         <p>17:25</p>
@@ -125,6 +161,7 @@
     <!-- End taskbar -->
 
   <script src="js/about-me.js"></script>
+  <script src="js/skills.js"></script>
     
 </body>
 </html>

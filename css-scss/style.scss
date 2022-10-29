@@ -3,15 +3,14 @@
 ========================================================================== */
 * {
     box-sizing: border-box;
+    font-family: "Windows Regular";
   }
   
   body {
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    background-color: rgb(3, 131, 140);
-    font-family: "Windows Regular";
-  
+    background-color: rgb(3, 131, 140);  
   }
 
   @font-face {
@@ -20,7 +19,11 @@
            
    }
    
-  
+  div{
+    text-align: center;
+  }
+
+
   .desktop {
     height: 100vh;
     background-position: center;
@@ -28,11 +31,6 @@
   }
 
    
-
-  div{
-      text-align: center;
-      color: rgb(228, 243, 244);
-  }
 
 
 
@@ -47,7 +45,7 @@
   }
 
 
- button /* Tout d'abord, on initialise le button*/ {
+  .button /* Tout d'abord, on initialise le button*/ {
     cursor: pointer;
     border: 0px;
     background:transparent;
@@ -55,18 +53,21 @@
     transition: all .2s;
     overflow: hidden;
     border-radius: 2px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
   
   }
   
   
-  button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+  .button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
     background-color: rgba(8, 8, 162, 0.586);
     color: aliceblue;
     border: dashed 5px rgba(194, 179, 179, 0.732);
 }
 
 
-button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+.button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
   content: '';
   position: absolute;
   top: -50px;
@@ -84,29 +85,40 @@ button::after /* la pseudo classe after permet d'excuter les derniers éléments
     ICONS
 ========================================================================== */
 
-
 div:nth-of-type(1){
-  grid-row: 4/5;
-  grid-row: 5/6;  
+  grid-row: 1/2;
+  grid-row: 1/2;  
   
 }
 
-
 div:nth-of-type(2){
-  grid-column: -2/-1; 
-  grid-row: -2/-1;
+  grid-column: 5/6; 
+  grid-row: -6/-5;
    
 }
 
 div:nth-of-type(3){
   grid-column: 3/4; 
-  grid-row: -4/-3;
+  grid-row: 3/4;
 }
 
 div:nth-of-type(4){
   grid-column: 5/6; 
-  grid-row: 1/2;
+  grid-row: -2/-1;
 }
+
+div:nth-of-type(5){
+  grid-column: 1/2; 
+  grid-row: 5/6;
+}
+
+@import url(../css-scss/composants/modal-me.css);
+@import url(../css-scss/composants/modal-skills.css);
+@import url(../css-scss/composants/modal-hobbies.css);
+@import url(../css-scss/composants/modal-contacts.css);
+
+
+  
 
   /* ==========================================================================
     TASKBAR
@@ -166,6 +178,8 @@ div:nth-of-type(4){
 
 .start-button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
     box-shadow: 10px 10px 25px 0px rgba(87, 84, 91, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+    transform: translate(0,-3px);
+
 }
 
 
@@ -179,4 +193,8 @@ div:nth-of-type(4){
   box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
 
 }
+
+  /* ==========================================================================
+   RESPONSIVE
+========================================================================== */
 
